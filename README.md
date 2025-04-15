@@ -1,7 +1,5 @@
 # Data-Analytics-Portfolio
 Data Cleaning, SQL, and Visualization Projects
-# Data Analytics Portfolio  
-
 This repository showcases my hands-on projects and learning journey in data analytics.
 
 ---
