@@ -5,7 +5,7 @@ This project was created to help me explore how the COVID-19 pandemic affected h
 
 Throughout this project, I worked with open datasets to look at hospitalization numbers, death rates, and population data. My goal was to compare these factors across different counties and income levels to see where the healthcare system may have been under the most pressure. I also wanted to use this project to grow my technical skills while asking meaningful questions about equity and preparedness during a public health crisis.
 
-## 🎯 Objectives
+## 🌟 Objectives
 - Explore and compare hospitalization and death rates across NJ counties during COVID-19
 - Identify how outcomes may differ between low-income and high-income areas
 - Visualize geographic differences in healthcare burden
@@ -24,9 +24,9 @@ Throughout this project, I worked with open datasets to look at hospitalization 
 - GitHub – for sharing my work and documenting the project
 
 ## 📂 Data Sources
-- [NJ COVID-19 Hospitalization Data – NJ.gov](#)
+- [US COVID-19 Time Series Deaths by County – Johns Hopkins University GitHub](https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv)
 - [NJ County Population Estimates – NJ.gov](#)
-- [NJ COVID-19 Deaths by County – NJ Department of Health](#)
+- [NJ Median Household Income by County – census.gov](#)
 
 ## 🧪 Key Metrics
 - Hospitalizations per 10,000 residents
