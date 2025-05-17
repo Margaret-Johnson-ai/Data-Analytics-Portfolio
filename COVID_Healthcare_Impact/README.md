@@ -25,14 +25,14 @@ Throughout this project, I worked with open datasets to look at hospitalization 
 
 ## 📂 Data Sources
 - [US COVID-19 Time Series Deaths by County – Johns Hopkins University GitHub](https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv)
-- [NJ County Population Estimates – NJ.gov](#)
+- [COVID-19 Outbreaks in NJ Long-Term Care Facilities – NJ Department of Health](https://www.nj.gov/health/covid-19/information/data-and-dashboards/#COVID-19-Dashboard)
 - [NJ Median Household Income by County – census.gov](#)
 
 ## 🧪 Key Metrics
 - Hospitalizations per 10,000 residents
 - Deaths per 1,000 confirmed infections
 - County income classification (low, medium, high)
-- Bed-to-population ratios (if available)
+- LTC facility-level outbreaks and conclusion dates
 
 ## 📊 Visualizations
 _Screenshots and charts will be added here after I complete the analysis phase._
