@@ -54,19 +54,11 @@ Here's what’s been done so far:
 
 ## 📊 Datasets Used
 
-| Dataset Name | Description | Status |
-|--------------|-------------|--------|
-| **US COVID Deaths by County** | Sourced from CDC. Filtered to NJ and cleaned. | ✅ Cleaned |
-| **NJ Median Household Income** | County-level income data from Census.gov | ✅ Cleaned |
-| **NJ Long-Term Care Facility Outbreaks** | NJDOH data on COVID cases/deaths in LTCs | ✅ Cleaned |
-
-•	## 📊 Datasets Used
-•	
-•	| Dataset Name | Description | Link | Status |
-•	|--------------|-------------|-------------|--------|
-•	| **US COVID Deaths by County** | Sourced from CDC. Filtered to NJ and cleaned. | https://data.cdc.gov/NCHS/Provisional-COVID-19-Deaths-by-County-and-Race-Hisp/ks3g-spdg | ✅ Cleaned |
-•	| **NJ Median Household Income** | County-level income data from Census.gov | https://data.census.gov/table?q=median+household+income+new+jersey+counties | ✅ Cleaned |
-| **NJ Long-Term Care Facility Outbreaks** | NJDOH data on COVID cases/deaths in LTCs | https://www.nj.gov/health/healthfacilities/documents/COVID19/LTCOutbreaksCOVID19.xlsx | ✅ Cleaned |
+| Dataset Name | Description | Source Link | Status |
+|--------------|-------------|-------------|--------|
+| US COVID Deaths by County | Sourced from CDC. Filtered to NJ and cleaned. | [View Dataset](https://data.cdc.gov/NCHS/Provisional-COVID-19-Deaths-by-County-and-Race-Hisp/ks3g-spdg) | ✅ Cleaned |
+| NJ Median Household Income | County-level income data from Census.gov | [View Dataset](https://data.census.gov/table?q=median+household+income+new+jersey+counties) | ✅ Cleaned |
+| NJ Long-Term Care Facility Outbreaks | NJDOH data on COVID cases/deaths in LTCs | [View Dataset](https://www.nj.gov/health/healthfacilities/documents/COVID19/LTCOutbreaksCOVID19.xlsx) | ✅ Cleaned |
 
 ---
 
