@@ -206,3 +206,30 @@ To clean and prepare a reliable, analysis-ready dataset that shows **median hous
 
 > ✅ This cleaned dataset will be used for joining with COVID-19 case data and NJ hospital capacity metrics to explore socioeconomic and healthcare impact patterns by county.
 
+
+### 📊 Cleaned Dataset 3: US COVID-19 Deaths by County (NJ Subset)
+
+**🗂 File Name:** `Cleaned_US_COVID_Deaths_By_County.csv`  
+**📍 Source:** Johns Hopkins University GitHub (Python-encoded dataset, manually converted to CSV)  
+**📅 Data Period:** January 22, 2020 – March 9, 2023  
+**📌 Focus Area:** New Jersey Counties Only
+
+#### ✅ Cleaning Workflow Summary (KNIME):
+| Step | Action |
+|------|--------|
+| 01   | Imported CSV using `CSV Reader` |
+| 02   | Applied `Row Filter` to retain only rows where `Province_State = New Jersey` |
+| 03   | Used `Column Filter` to remove unnecessary fields like UID, FIPS, Lat, Long, ISO codes, and retained only `Admin2` (County) and date columns |
+| 04   | Renamed `Admin2` column to `County` using `Column Renamer` |
+| 05   | Checked for and prepared to handle missing values using `Missing Value` node (none were present) |
+| 06   | Final dataset saved to `Final_Exports` folder as `Cleaned_US_COVID_Deaths_By_County.csv` |
+
+#### 📦 Output Structure:
+| County      | 1/22/2020 | 1/23/2020 | ... | 3/9/2023 |
+|-------------|-----------|-----------|-----|----------|
+| Atlantic    | 0         | 0         | ... | [Value]  |
+| Bergen      | 0         | 0         | ... | [Value]  |
+| ...         | ...       | ...       | ... | ...      |
+
+#### 📁 File Path:
+
