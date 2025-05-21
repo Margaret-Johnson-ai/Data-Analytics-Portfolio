@@ -135,3 +135,74 @@ COVID_Healthcare_Impact/
 This project is part of a data analytics portfolio designed to showcase real-world cleaning, wrangling, and data pipeline management skills using visual workflow tools like KNIME.
 
 ️✅ Last updated: May 20, 2025
+
+### 📊 NJ Median Household Income by County (Cleaned Dataset)
+
+This dataset was sourced from the U.S. Census Bureau (ACS 5-Year Estimates) and provides median household income figures for each county in New Jersey. It is part of a broader project analyzing the **COVID-19 impact on healthcare across NJ counties**.
+
+---
+
+#### 🧾 Objective
+
+To clean and prepare a reliable, analysis-ready dataset that shows **median household income per county** in New Jersey, which can be joined with COVID-19 case data and hospital capacity statistics.
+
+---
+
+#### 🛠️ Data Cleaning Workflow (KNIME)
+
+> **Tool Used:** KNIME Analytics Platform
+
+1. **Load Raw CSV File**  
+   📄 Source: `ACSST5Y2022.S1903-Data.csv`  
+   🔗 [U.S. Census Bureau – data.census.gov](https://data.census.gov/)  
+   ![Step 1](Screenshots/01_Load_Median_Income_CSV_Reader.png)
+
+2. **Filter to Relevant Columns**  
+   - `NAME` (County)  
+   - `S1903_C03_001E` (Median Household Income)  
+   ![Step 2](Screenshots/02_Filter_MedianIncome_Related_Columns.png)
+
+3. **Rename Columns**  
+   - `NAME` → `County`  
+   - `S1903_C03_001E` → `Median_Household_Income`  
+   ![Step 3](Screenshots/03_Rename_County_Income_Columns.png)
+
+4. **Clean County Names**  
+   - Removed “, New Jersey” from the `County` field using regex  
+   ![Step 4](Screenshots/04_Clean_County_Names_Regex.png)
+
+5. **Remove Metadata Rows**  
+   - Used `Row Filter` to remove `"Geographic Area Name"` and `"New Jersey"` (summary row)  
+   ![Step 5a](Screenshots/05a_Remove_Header_Rows_RowFilter.png)
+
+6. **Filter to Keep Only Numeric Income Values**  
+   ![Step 5b](Screenshots/05b_Filter_NonNumeric_Income_Values.png)
+
+7. **Remove Commas + Spaces from Income Strings**  
+   - Used `String Manipulation` to clean formatting  
+   ![Step 5c](Screenshots/05c_StringManipulation_RemoveCommas.png)
+
+8. **Convert to Numeric Format**  
+   - Converted `Median_Household_Income` from string to `double`  
+   ![Step 5d](Screenshots/05d_Convert_Median_Income_To_Number.png)
+
+9. **Export Final CSV**  
+   - File saved in: `/Final_Export/NJ_Median_Income_By_County_Cleaned.csv`  
+   ![Step 6](Screenshots/06_Save_Cleaned_Median_Income_CSV.png)
+
+---
+
+#### ✅ Sample Output (Final Cleaned Data)
+
+| County           | Median_Household_Income |
+|------------------|--------------------------|
+| Atlantic County  | 70913                    |
+| Bergen County    | 116856                   |
+| Camden County    | 76151                    |
+| Essex County     | 68436                    |
+| Mercer County    | 88844                    |
+
+---
+
+> ✅ This cleaned dataset will be used for joining with COVID-19 case data and NJ hospital capacity metrics to explore socioeconomic and healthcare impact patterns by county.
+
