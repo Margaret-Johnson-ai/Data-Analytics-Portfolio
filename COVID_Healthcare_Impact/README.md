@@ -56,10 +56,9 @@ Here's what’s been done so far:
 
 | Dataset Name | Description | Source Link | Status |
 |--------------|-------------|-------------|--------|
-| US COVID Deaths by County | Sourced from CDC. Filtered to NJ and cleaned. | [View Dataset](https://data.cdc.gov/NCHS/Provisional-COVID-19-Deaths-by-County-and-Race-and/k8wy-p9cg) | ✅ Cleaned |
+| US COVID Deaths by County | Sourced from CDC. Filtered to NJ and cleaned. | [View Dataset](https://data.cdc.gov/NCHS/Provisional-COVID-19-Death-Counts-by-County-and-Ra/k8wy-p9cg) | ✅ Cleaned |
 | NJ Median Household Income | County-level income data from Census.gov | [View Dataset](https://data.census.gov/table?q=median+household+income+new+jersey+counties) | ✅ Cleaned |
-| NJ Long-Term Care Facility Outbreaks | NJDOH data on COVID cases/deaths in LTCs | [View Dataset](https://www.nj.gov/health/healthfacilities/documents/COVID19/LTCOutbreaksCOVID19.xlsx) | ✅ Cleaned |
-
+| NJ Long-Term Care Facility Outbreaks | NJDOH dashboard with LTC COVID-19 data | [View Dataset](https://www.nj.gov/health/covid-19/information/data-and-dashboards/) | ✅ Cleaned |
 
 ---
 
