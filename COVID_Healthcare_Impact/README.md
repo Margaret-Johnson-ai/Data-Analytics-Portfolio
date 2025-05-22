@@ -1,6 +1,22 @@
-# 🦠 COVID-19 Healthcare Impact: A County-Level Data Analysis Project (New Jersey)
+# 🩺 COVID-19 Healthcare Impact in New Jersey  
+_A Data Cleaning & Analysis Project_
 
-This project explores the impact of COVID-19 on healthcare systems across New Jersey using real-world public health data. It focuses on data cleaning, integration, and visualization to uncover trends related to death rates, hospital utilization, and household income by county.
+---
+
+## 🎯 Project Purpose
+
+This project investigates how COVID-19 impacted healthcare systems and outcomes across counties in New Jersey. By combining data from federal and state health sources, the goal is to uncover how death rates, hospital resource usage, and county income levels are interrelated.
+
+---
+
+## ❓ Key Questions to Answer During Analysis
+
+- What counties experienced the **highest COVID-19 death rates**?
+- Is there a relationship between **income level** and **COVID-19 mortality**?
+- Did counties with **higher ICU utilization** experience more fatalities?
+- Which counties were **most vulnerable** based on combined metrics?
+
+These questions will be addressed during the Exploratory Data Analysis (EDA) phase.
 
 ---
 
@@ -8,60 +24,88 @@ This project explores the impact of COVID-19 on healthcare systems across New Je
 
 | Dataset                                 | Source                                                                                          | Description                                     |
 |----------------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------|
-| US_COVID_Deaths_Cleaned.csv            | [CDC - Provisional COVID-19 Death Counts](https://data.cdc.gov/NCHS/Provisional-COVID-19-Death-Counts-by-County-and-Race/k8wy-p9cg) | County-level death counts filtered for NJ       |
-| NJ_Hospital_Utilization.csv            | [NJ Department of Health](https://www.nj.gov/health/)                                           | ICU bed availability, general bed usage         |
-| NJ_Median_Income_by_County.csv         | [U.S. Census Bureau](https://www.census.gov/data.html)                                          | Median household income by NJ county            |
+| `US_COVID_Deaths_Cleaned.csv`          | [CDC - COVID-19 Deaths by County](https://data.cdc.gov/NCHS/Provisional-COVID-19-Death-Counts-by-County-and-Race/k8wy-p9cg) | County-level death counts filtered for NJ       |
+| `NJ_Hospital_Utilization.csv`          | [NJ Department of Health](https://www.nj.gov/health/)                                           | ICU/general bed occupancy trends                |
+| `NJ_Median_Income_by_County.csv`       | [U.S. Census Bureau](https://www.census.gov/data.html)                                          | Median household income by NJ county            |
+
+---
+
+## 🛠 Tools Used
+
+- **KNIME Analytics Platform** – for data cleaning, workflow design, and automation
+- **Python** – for CSV validation and previewing cleaned datasets
+- **GitHub** – for version control, project portfolio, and documentation
+- **Command Prompt (CMD)** – for Git operations and local repository management
+- **Notepad** – for quick edits to markdown files and manual code updates
 
 ---
 
 ## 📸 Project Screenshots
 
 ### 🧼 Dataset 1: NJ Long-Term Care Facility Outbreaks
-![Import LTC Data](./Screenshots/Dataset_1-NJ%20Long-Term%20Care%20Facility%20Outbreaks/01_Import_LTC_Data_CSV_Reader.png)
-![Cleaned LTC Output](./Screenshots/Dataset_1-NJ%20Long-Term%20Care%20Facility%20Outbreaks/11_Final_LTC_Cleaned_Table.png)
+
+![Raw Excel Preview](./Screenshots/Dataset_1-NJ%20Long-Term%20Care%20Facility%20Outbreaks/01_Raw_LTC_Excel_Preview.png.png)  
+![Import LTC Data](./Screenshots/Dataset_1-NJ%20Long-Term%20Care%20Facility%20Outbreaks/01_Import_LTC_Data_CSV_Reader.png.png)  
+![Filter NJ Rows](./Screenshots/Dataset_1-NJ%20Long-Term%20Care%20Facility%20Outbreaks/02_Filter_LTC_New_Jersey_Rows.png.png)  
+![Save Raw CSV](./Screenshots/Dataset_1-NJ%20Long-Term%20Care%20Facility%20Outbreaks/02_Save_Raw_CSV_Proper_Format.png.png)  
+![Filtered Output](./Screenshots/Dataset_1-NJ%20Long-Term%20Care%20Facility%20Outbreaks/03_Filtered_NJ_LTC_Records_Output.png.png)  
+![Raw Structure](./Screenshots/Dataset_1-NJ%20Long-Term%20Care%20Facility%20Outbreaks/04_LTC_Raw_Structure_Preview.png.png)  
+![RowID](./Screenshots/Dataset_1-NJ%20Long-Term%20Care%20Facility%20Outbreaks/05_Add_RowID_LTC_Data.png.png)  
+![Rename Columns](./Screenshots/Dataset_1-NJ%20Long-Term%20Care%20Facility%20Outbreaks/06_Rename_LTC_Columns.png.png)  
+![Renamed Output](./Screenshots/Dataset_1-NJ%20Long-Term%20Care%20Facility%20Outbreaks/07_Renamed_LTC_Columns_Output.png.png)  
+![Cleaned Data](./Screenshots/Dataset_1-NJ%20Long-Term%20Care%20Facility%20Outbreaks/08_Filtered_LTC_Cleaned_Output.png.png)  
+![Missing Values](./Screenshots/Dataset_1-NJ%20Long-Term%20Care%20Facility%20Outbreaks/09_Missing_Values_LTC.png.png)  
+![Data Type Conversion](./Screenshots/Dataset_1-NJ%20Long-Term%20Care%20Facility%20Outbreaks/10_DataType_Converted_LTC.png.png)  
+![Final Table](./Screenshots/Dataset_1-NJ%20Long-Term%20Care%20Facility%20Outbreaks/11_Final_LTC_Cleaned_Table.png.png)
 
 ---
 
 ### 🧼 Dataset 2: NJ Median Household Income
-![Filter Columns](./Screenshots/Dataset_2-NJ%20Median%20Household%20Income/02_Filter_Columns_Income.png)
-![Save Cleaned File](./Screenshots/Dataset_2-NJ%20Median%20Household%20Income/06_Save_Cleaned_Income_CSV.png)
+
+![Load CSV](./Screenshots/Dataset_2-NJ%20Median%20Household%20Income/01_Load_Median_Income_CSV.png.png)  
+![Filter Columns](./Screenshots/Dataset_2-NJ%20Median%20Household%20Income/02_Filter_Columns_Income.png.png)  
+![Rename Columns](./Screenshots/Dataset_2-NJ%20Median%20Household%20Income/03_Rename_Columns_Income.png.png)  
+![Regex Clean Names](./Screenshots/Dataset_2-NJ%20Median%20Household%20Income/04_Clean_County_Names_Regex.png.png)  
+![Remove Header Rows](./Screenshots/Dataset_2-NJ%20Median%20Household%20Income/05a_Remove_Header_Rows.png.png)  
+![Filter Valid Rows](./Screenshots/Dataset_2-NJ%20Median%20Household%20Income/05b_Filter_Valid_Income_Rows.png.png)  
+![Remove Commas](./Screenshots/Dataset_2-NJ%20Median%20Household%20Income/05c_Remove_Commas_StringManipulation.png.png)  
+![Convert to Numbers](./Screenshots/Dataset_2-NJ%20Median%20Household%20Income/05d_Convert_Income_To_Number.png.png)  
+![Save CSV](./Screenshots/Dataset_2-NJ%20Median%20Household%20Income/06_Save_Cleaned_Income_CSV.png.png)
 
 ---
 
 ### 🧼 Dataset 3: US COVID Deaths by County (NJ Only)
-![Filter NJ Counties](./Screenshots/Dataset_3-US%20COVID%20Deaths%20by%20County%20(NJ%20Only)/02_Filter_New_Jersey_Rows.png)
-![Save Cleaned CSV](./Screenshots/Dataset_3-US%20COVID%20Deaths%20by%20County%20(NJ%20Only)/06_Save_Cleaned_US_Deaths_CSV.png)
 
----
-
-## 🛠 Tools Used
-
-- **KNIME Analytics Platform** – Data wrangling, filtering, and cleaning
-- **Python (pandas)** – Data preview and format validation
-- **GitHub** – Version control, project documentation, and public portfolio
+![Read CSV](./Screenshots/Dataset_3-US%20COVID%20Deaths%20by%20County%20(NJ%20Only)/01_Read_US_COVID_Deaths_CSV.png.png)  
+![Filter NJ Rows](./Screenshots/Dataset_3-US%20COVID%20Deaths%20by%20County%20(NJ%20Only)/02_Filter_New_Jersey_Rows.png.png)  
+![Remove Columns](./Screenshots/Dataset_3-US%20COVID%20Deaths%20by%20County%20(NJ%20Only)/03_Remove_Unnecessary_Columns_Deaths.png.png)  
+![Rename Admin2](./Screenshots/Dataset_3-US%20COVID%20Deaths%20by%20County%20(NJ%20Only)/04_Rename_Admin2_To_County.png.png)  
+![Missing Values](./Screenshots/Dataset_3-US%20COVID%20Deaths%20by%20County%20(NJ%20Only)/05_Handle_Missing_Values_Deaths.png.png)  
+![Save Cleaned CSV](./Screenshots/Dataset_3-US%20COVID%20Deaths%20by%20County%20(NJ%20Only)/06_Save_Cleaned_US_Deaths_CSV.png.png)
 
 ---
 
 ## 🧠 What I Learned
 
-- How to extract and transform complex public datasets into clean, analyzable formats
-- How to apply best practices for naming conventions, string manipulation, and value filtering in KNIME
-- How to document data cleaning steps with visuals and descriptive commit history for transparency and reproducibility
+- How to structure, filter, and clean public health datasets in KNIME
+- How to apply logic nodes, string manipulation, and regex in workflows
+- How to document the full process using GitHub with screenshots and commits
 
 ---
 
-## 🚧 Next Steps (Phase 2: EDA – Exploratory Data Analysis)
+## 🚧 Next Steps (Phase 2: Exploratory Data Analysis – EDA)
 
-- [ ] Create bar charts showing COVID-19 deaths vs. income by county
-- [ ] Generate correlation heatmaps between ICU bed use, death rates, and income levels
-- [ ] Add all visuals under a new `/EDA_Visuals/` folder
-- [ ] Document key takeaways and trends in this README
+✅ **Coming up next**:  
+- [ ] Create bar charts: COVID deaths vs income by county  
+- [ ] Correlation heatmaps: death rate, ICU use, income  
+- [ ] Identify county-level risk clusters  
+- [ ] Visuals saved in `EDA_Visuals/` and added to this README  
 
 ---
 
-## ✅ Final Note
+## 📌 Summary
 
-This project is part of my Data Analytics Portfolio and showcases real-world data wrangling, documentation, and visualization skills. It highlights my ability to clean messy datasets, structure projects for clarity, and communicate findings in a professional way.
+This project demonstrates practical skills in real-world data cleaning, transformation, documentation, and preparation for analysis. It is part of my Data Analytics Portfolio showcasing my growth in data storytelling and health data analysis.
 
-Feel free to explore the files, workflows, and screenshots, and follow my GitHub for continued updates as I complete the EDA phase.
+Stay tuned for the EDA phase!
 
