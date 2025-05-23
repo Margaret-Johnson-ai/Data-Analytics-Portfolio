@@ -85,19 +85,35 @@ These questions will be addressed during the Exploratory Data Analysis (EDA) pha
 
 ---
 
-## 📊 Exploratory Data Analysis (EDA)
+## 📊 Visual Insights: COVID-19 Deaths and Household Income in NJ Counties
 
-### COVID-19 Total Deaths vs. Median Household Income
+### 🔹 Bar Chart: Average Monthly COVID-19 Deaths by County
 
-![COVID Deaths vs Income](EDA_Visuals/COVID_Deaths_vs_Income_By_County.png)
+![Realistic Bar Chart](EDA_Visuals/Realistic_Avg_Monthly_Deaths_BarChart.png)
 
-- Counties with **lower median household incomes** experienced **higher total COVID-19 deaths**.
-- The bar chart reveals a potential **negative correlation** between income level and pandemic outcomes.
-- This insight highlights how **socioeconomic factors** may influence vulnerability during health crises.
+- This chart shows the **average number of new COVID-19 deaths per month** (2020–2023) in each New Jersey county.
+- Counties like **Bergen**, **Essex**, and **Hudson** show consistently higher monthly death averages.
+- Each bar is labeled with the death count to help visualize the impact clearly.
 
-**Data Sources:**
-- [CDC COVID-19 Deaths by County](https://data.cdc.gov/NCHS/Provisional-COVID-19-Death-Counts-by-County-and-Ra/k8wy-p9cg)
-- [U.S. Census Bureau – Median Household Income](https://www.census.gov/)
+📝 *Each bar reflects newly reported deaths (not cumulative), based on CDC data converted into daily deltas and averaged monthly.*
+
+---
+
+### 🔹 Scatter Plot: Median Income vs. Avg Monthly COVID-19 Deaths
+
+![Income vs Deaths Scatter](EDA_Visuals/Income_vs_Deaths_Scatter.png)
+
+- This chart plots **median household income** against **average monthly COVID-19 deaths** per county.
+- The visual reveals potential **inverse relationships** — counties with lower income levels often experienced higher death rates.
+- For example, counties like **Essex** and **Camden** show higher death averages compared to wealthier counties like **Hunterdon**.
+
+---
+
+## 💡 Insights Summary
+
+- **Geographic impact** is uneven — some counties bore a much heavier burden.
+- **Income disparities** may correlate with higher death rates, highlighting a public health equity issue.
+- Visual storytelling helps connect public health data with socioeconomic realities.
 
 ---
 
