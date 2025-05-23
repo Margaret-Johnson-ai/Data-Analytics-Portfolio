@@ -32,10 +32,10 @@ These questions will be addressed during the Exploratory Data Analysis (EDA) pha
 
 ## 🛠 Tools Used
 
-- **KNIME Analytics Platform** – for data cleaning, workflow design, and automation
-- **Python** – for CSV validation and previewing cleaned datasets
-- **GitHub** – for version control, project portfolio, and documentation
-- **Command Prompt (CMD)** – for Git operations and local repository management
+- **KNIME Analytics Platform** – for data cleaning, workflow design, and automation  
+- **Python** – for CSV validation and previewing cleaned datasets  
+- **GitHub** – for version control, project portfolio, and documentation  
+- **Command Prompt (CMD)** – for Git operations and local repository management  
 - **Notepad** – for quick edits to markdown files and manual code updates
 
 ---
@@ -85,27 +85,42 @@ These questions will be addressed during the Exploratory Data Analysis (EDA) pha
 
 ---
 
+## 📊 Exploratory Data Analysis (EDA)
+
+### COVID-19 Total Deaths vs. Median Household Income
+
+![COVID Deaths vs Income](EDA_Visuals/COVID_Deaths_vs_Income_By_County.png)
+
+- Counties with **lower median household incomes** experienced **higher total COVID-19 deaths**.
+- The bar chart reveals a potential **negative correlation** between income level and pandemic outcomes.
+- This insight highlights how **socioeconomic factors** may influence vulnerability during health crises.
+
+**Data Sources:**
+- [CDC COVID-19 Deaths by County](https://data.cdc.gov/NCHS/Provisional-COVID-19-Death-Counts-by-County-and-Ra/k8wy-p9cg)
+- [U.S. Census Bureau – Median Household Income](https://www.census.gov/)
+
+---
+
 ## 🧠 What I Learned
 
-- How to structure, filter, and clean public health datasets in KNIME
-- How to apply logic nodes, string manipulation, and regex in workflows
-- How to document the full process using GitHub with screenshots and commits
+- How to structure, filter, and clean public health datasets in KNIME  
+- How to apply logic nodes, string manipulation, and regex in workflows  
+- How to document the full process using GitHub with screenshots and commits  
+- How to visualize real-world healthcare patterns using Python and Seaborn
 
 ---
 
 ## 🚧 Next Steps (Phase 2: Exploratory Data Analysis – EDA)
 
-✅ **Coming up next**:  
-- [ ] Create bar charts: COVID deaths vs income by county  
+✅ Bar chart: COVID deaths vs income by county  
 - [ ] Correlation heatmaps: death rate, ICU use, income  
 - [ ] Identify county-level risk clusters  
-- [ ] Visuals saved in `EDA_Visuals/` and added to this README  
+- [ ] Add remaining visuals to `EDA_Visuals/` and document findings
 
 ---
 
 ## 📌 Summary
 
-This project demonstrates practical skills in real-world data cleaning, transformation, documentation, and preparation for analysis. It is part of my Data Analytics Portfolio showcasing my growth in data storytelling and health data analysis.
+This project demonstrates practical skills in real-world data cleaning, exploratory analysis, documentation, and portfolio storytelling. I've completed the first visual insight showing the relationship between county income and COVID-19 deaths, and will continue analyzing healthcare impact using additional statistical and visual tools.
 
-Stay tuned for the EDA phase!
-
+Stay tuned for heatmaps, correlations, and deeper insights in the next push!
