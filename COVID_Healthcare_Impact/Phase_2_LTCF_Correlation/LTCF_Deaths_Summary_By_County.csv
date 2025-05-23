@@ -1,0 +1,21 @@
+County,Confirmed_Resident_Deaths,Confirmed_Staff_Deaths,Total_LTCF_Deaths
+atlantic,31.0,0.0,31.0
+bergen,1200.0,11.0,1211.0
+burlington,34.0,0.0,34.0
+essex,614.0,20.0,634.0
+gloucester,320.0,4.0,324.0
+hudson,360.0,8.0,368.0
+hunterdon,86.0,2.0,88.0
+mercer,452.0,5.0,457.0
+middlesex,701.0,8.0,709.0
+monmouth,873.0,8.0,881.0
+morris,615.0,4.0,619.0
+note:,0.0,0.0,0.0
+ocean,917.0,8.0,925.0
+passaic,542.0,16.0,558.0
+salem,114.0,0.0,114.0
+somerset,451.0,10.0,461.0
+sussex,209.0,4.0,213.0
+"the five cfid facilities have been added to the public report, which are highlighted in orange. the numbers of confirmed cases for these facilities are pending for verification.",0.0,0.0,0.0
+union,557.0,11.0,568.0
+warren,171.0,1.0,172.0

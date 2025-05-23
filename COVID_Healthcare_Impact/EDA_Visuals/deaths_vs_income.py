@@ -78,3 +78,6 @@ plt.xlabel('Median Household Income ($)')
 plt.ylabel('Average Monthly COVID-19 Deaths')
 plt.tight_layout()
 plt.savefig('Income_vs_Deaths_Scatter.png')
+
+# Save merged dataset for future use in LTCF correlation
+merged.to_csv('merged_avg_monthly_deaths_income.csv', index=False)

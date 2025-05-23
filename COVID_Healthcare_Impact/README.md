@@ -5,7 +5,7 @@ _A Data Cleaning & Analysis Project_
 
 ## 🎯 Project Purpose
 
-This project investigates how COVID-19 impacted healthcare systems and outcomes across counties in New Jersey. By combining data from federal and state health sources, the goal is to uncover how death rates, hospital resource usage, and county income levels are interrelated.
+This project investigates how COVID-19 impacted healthcare systems and outcomes across counties in New Jersey. By combining data from federal and state health sources, the goal is to uncover how death rates, LTCF (Long-Term Care Facility) deaths, and county income levels are interrelated.
 
 ---
 
@@ -13,10 +13,8 @@ This project investigates how COVID-19 impacted healthcare systems and outcomes 
 
 - What counties experienced the **highest COVID-19 death rates**?
 - Is there a relationship between **income level** and **COVID-19 mortality**?
-- Did counties with **higher ICU utilization** experience more fatalities?
+- How did **long-term care facilities** contribute to total death counts?
 - Which counties were **most vulnerable** based on combined metrics?
-
-These questions will be addressed during the Exploratory Data Analysis (EDA) phase.
 
 ---
 
@@ -25,77 +23,30 @@ These questions will be addressed during the Exploratory Data Analysis (EDA) pha
 | Dataset                                 | Source                                                                                          | Description                                     |
 |----------------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------|
 | `US_COVID_Deaths_Cleaned.csv`          | [CDC - COVID-19 Deaths by County](https://data.cdc.gov/NCHS/Provisional-COVID-19-Death-Counts-by-County-and-Race/k8wy-p9cg) | County-level death counts filtered for NJ       |
-| `NJ_Hospital_Utilization.csv`          | [NJ Department of Health](https://www.nj.gov/health/)                                           | ICU/general bed occupancy trends                |
 | `NJ_Median_Income_by_County.csv`       | [U.S. Census Bureau](https://www.census.gov/data.html)                                          | Median household income by NJ county            |
+| `NJ_LTCF_COVID_Outbreaks.csv`          | [NJ DOH LTCF Report](https://www.nj.gov/health/)                                                | Resident and staff death counts in LTCF facilities |
 
 ---
 
 ## 🛠 Tools Used
 
-- **KNIME Analytics Platform** – for data cleaning, workflow design, and automation  
-- **Python** – for CSV validation and previewing cleaned datasets  
-- **GitHub** – for version control, project portfolio, and documentation  
-- **Command Prompt (CMD)** – for Git operations and local repository management  
-- **Notepad** – for quick edits to markdown files and manual code updates
+- **KNIME Analytics Platform** – for data cleaning  
+- **Python (Pandas, Seaborn, Matplotlib)** – for analysis and visualizations  
+- **GitHub** – for version control and portfolio documentation  
+- **Command Prompt** – for file management and execution  
+- **Notepad** – for markdown and script editing  
 
 ---
 
-## 📸 Project Screenshots
+## 📊 Visual Insights
 
-### 🧼 Dataset 1: NJ Long-Term Care Facility Outbreaks
-
-![Raw Excel Preview](./Screenshots/Dataset_1-NJ%20Long-Term%20Care%20Facility%20Outbreaks/01_Raw_LTC_Excel_Preview.png.png)  
-![Import LTC Data](./Screenshots/Dataset_1-NJ%20Long-Term%20Care%20Facility%20Outbreaks/01_Import_LTC_Data_CSV_Reader.png.png)  
-![Filter NJ Rows](./Screenshots/Dataset_1-NJ%20Long-Term%20Care%20Facility%20Outbreaks/02_Filter_LTC_New_Jersey_Rows.png.png)  
-![Save Raw CSV](./Screenshots/Dataset_1-NJ%20Long-Term%20Care%20Facility%20Outbreaks/02_Save_Raw_CSV_Proper_Format.png.png)  
-![Filtered Output](./Screenshots/Dataset_1-NJ%20Long-Term%20Care%20Facility%20Outbreaks/03_Filtered_NJ_LTC_Records_Output.png.png)  
-![Raw Structure](./Screenshots/Dataset_1-NJ%20Long-Term%20Care%20Facility%20Outbreaks/04_LTC_Raw_Structure_Preview.png.png)  
-![RowID](./Screenshots/Dataset_1-NJ%20Long-Term%20Care%20Facility%20Outbreaks/05_Add_RowID_LTC_Data.png.png)  
-![Rename Columns](./Screenshots/Dataset_1-NJ%20Long-Term%20Care%20Facility%20Outbreaks/06_Rename_LTC_Columns.png.png)  
-![Renamed Output](./Screenshots/Dataset_1-NJ%20Long-Term%20Care%20Facility%20Outbreaks/07_Renamed_LTC_Columns_Output.png.png)  
-![Cleaned Data](./Screenshots/Dataset_1-NJ%20Long-Term%20Care%20Facility%20Outbreaks/08_Filtered_LTC_Cleaned_Output.png.png)  
-![Missing Values](./Screenshots/Dataset_1-NJ%20Long-Term%20Care%20Facility%20Outbreaks/09_Missing_Values_LTC.png.png)  
-![Data Type Conversion](./Screenshots/Dataset_1-NJ%20Long-Term%20Care%20Facility%20Outbreaks/10_DataType_Converted_LTC.png.png)  
-![Final Table](./Screenshots/Dataset_1-NJ%20Long-Term%20Care%20Facility%20Outbreaks/11_Final_LTC_Cleaned_Table.png.png)
-
----
-
-### 🧼 Dataset 2: NJ Median Household Income
-
-![Load CSV](./Screenshots/Dataset_2-NJ%20Median%20Household%20Income/01_Load_Median_Income_CSV.png.png)  
-![Filter Columns](./Screenshots/Dataset_2-NJ%20Median%20Household%20Income/02_Filter_Columns_Income.png.png)  
-![Rename Columns](./Screenshots/Dataset_2-NJ%20Median%20Household%20Income/03_Rename_Columns_Income.png.png)  
-![Regex Clean Names](./Screenshots/Dataset_2-NJ%20Median%20Household%20Income/04_Clean_County_Names_Regex.png.png)  
-![Remove Header Rows](./Screenshots/Dataset_2-NJ%20Median%20Household%20Income/05a_Remove_Header_Rows.png.png)  
-![Filter Valid Rows](./Screenshots/Dataset_2-NJ%20Median%20Household%20Income/05b_Filter_Valid_Income_Rows.png.png)  
-![Remove Commas](./Screenshots/Dataset_2-NJ%20Median%20Household%20Income/05c_Remove_Commas_StringManipulation.png.png)  
-![Convert to Numbers](./Screenshots/Dataset_2-NJ%20Median%20Household%20Income/05d_Convert_Income_To_Number.png.png)  
-![Save CSV](./Screenshots/Dataset_2-NJ%20Median%20Household%20Income/06_Save_Cleaned_Income_CSV.png.png)
-
----
-
-### 🧼 Dataset 3: US COVID Deaths by County (NJ Only)
-
-![Read CSV](./Screenshots/Dataset_3-US%20COVID%20Deaths%20by%20County%20(NJ%20Only)/01_Read_US_COVID_Deaths_CSV.png.png)  
-![Filter NJ Rows](./Screenshots/Dataset_3-US%20COVID%20Deaths%20by%20County%20(NJ%20Only)/02_Filter_New_Jersey_Rows.png.png)  
-![Remove Columns](./Screenshots/Dataset_3-US%20COVID%20Deaths%20by%20County%20(NJ%20Only)/03_Remove_Unnecessary_Columns_Deaths.png.png)  
-![Rename Admin2](./Screenshots/Dataset_3-US%20COVID%20Deaths%20by%20County%20(NJ%20Only)/04_Rename_Admin2_To_County.png.png)  
-![Missing Values](./Screenshots/Dataset_3-US%20COVID%20Deaths%20by%20County%20(NJ%20Only)/05_Handle_Missing_Values_Deaths.png.png)  
-![Save Cleaned CSV](./Screenshots/Dataset_3-US%20COVID%20Deaths%20by%20County%20(NJ%20Only)/06_Save_Cleaned_US_Deaths_CSV.png.png)
-
----
-
-## 📊 Visual Insights: COVID-19 Deaths and Household Income in NJ Counties
-
-### 🔹 Bar Chart: Average Monthly COVID-19 Deaths by County
+### 🔹 Bar Chart: Avg Monthly COVID-19 Deaths by County
 
 ![Realistic Bar Chart](EDA_Visuals/Realistic_Avg_Monthly_Deaths_BarChart.png)
 
-- This chart shows the **average number of new COVID-19 deaths per month** (2020–2023) in each New Jersey county.
-- Counties like **Bergen**, **Essex**, and **Hudson** show consistently higher monthly death averages.
-- Each bar is labeled with the death count to help visualize the impact clearly.
-
-📝 *Each bar reflects newly reported deaths (not cumulative), based on CDC data converted into daily deltas and averaged monthly.*
+- Depicts **monthly COVID-19 death averages** (not cumulative).
+- Shows impact across counties like **Bergen**, **Essex**, and **Hudson**.
+- Values are based on CDC cumulative data converted to daily deltas and averaged by month.
 
 ---
 
@@ -103,40 +54,49 @@ These questions will be addressed during the Exploratory Data Analysis (EDA) pha
 
 ![Income vs Deaths Scatter](EDA_Visuals/Income_vs_Deaths_Scatter.png)
 
-- This chart plots **median household income** against **average monthly COVID-19 deaths** per county.
-- The visual reveals potential **inverse relationships** — counties with lower income levels often experienced higher death rates.
-- For example, counties like **Essex** and **Camden** show higher death averages compared to wealthier counties like **Hunterdon**.
+- Plots **income** vs **monthly COVID deaths** to reveal inverse correlation.
+- Lower-income counties like **Essex** saw higher death averages.
+- Higher-income counties like **Hunterdon** show lower death rates.
+
+---
+
+### 🔹 Correlation Heatmap: LTCF Deaths, Income, Avg COVID Deaths
+
+![LTCF Heatmap](Phase_2_LTCF_Correlation/LTCF_Income_Deaths_Correlation_Heatmap.png)
+
+- Strong positive correlation between **LTCF deaths** and **avg monthly deaths** (`0.81`)
+- Weak negative correlation between **income** and **COVID-19 deaths** (`-0.18`)
+- Demonstrates LTCF impact is a more significant factor than income alone
 
 ---
 
 ## 💡 Insights Summary
 
-- **Geographic impact** is uneven — some counties bore a much heavier burden.
-- **Income disparities** may correlate with higher death rates, highlighting a public health equity issue.
-- Visual storytelling helps connect public health data with socioeconomic realities.
+- **LTCF deaths** are a key driver of overall mortality in some counties.
+- **Income alone** is not a strong predictor of COVID-19 death outcomes.
+- Combining LTCF, income, and death data provides a richer picture of health vulnerability.
 
 ---
 
 ## 🧠 What I Learned
 
-- How to structure, filter, and clean public health datasets in KNIME  
-- How to apply logic nodes, string manipulation, and regex in workflows  
-- How to document the full process using GitHub with screenshots and commits  
-- How to visualize real-world healthcare patterns using Python and Seaborn
+- Data wrangling and cleaning with KNIME  
+- Dataset merging and correlation analysis with Pandas  
+- Creating insightful charts with Seaborn and Matplotlib  
+- Organizing real-world health data into a clean storytelling portfolio  
 
 ---
 
-## 🚧 Next Steps (Phase 2: Exploratory Data Analysis – EDA)
+## 🚧 Next Steps (Phase 3 Planning)
 
-✅ Bar chart: COVID deaths vs income by county  
-- [ ] Correlation heatmaps: death rate, ICU use, income  
-- [ ] Identify county-level risk clusters  
-- [ ] Add remaining visuals to `EDA_Visuals/` and document findings
+- [ ] Analyze ICU utilization from NJ Hospital dataset  
+- [ ] Detect county-level risk clusters using unsupervised learning  
+- [ ] Develop a dynamic dashboard using Streamlit or Tableau  
 
 ---
 
 ## 📌 Summary
 
-This project demonstrates practical skills in real-world data cleaning, exploratory analysis, documentation, and portfolio storytelling. I've completed the first visual insight showing the relationship between county income and COVID-19 deaths, and will continue analyzing healthcare impact using additional statistical and visual tools.
+This project demonstrates foundational data analytics, public health insight, and storytelling. Phase 1 and 2 have covered county-level mortality, income impact, and LTCF vulnerability. Phase 3 will build on this foundation with advanced analysis and interactivity.
 
-Stay tuned for heatmaps, correlations, and deeper insights in the next push!
+📁 [View Repository](https://github.com/Margaret-Johnson-ai/Data-Analytics-Portfolio/tree/main/COVID_Healthcare_Impact)
