@@ -100,3 +100,22 @@ This project investigates how COVID-19 impacted healthcare systems and outcomes 
 This project demonstrates foundational data analytics, public health insight, and storytelling. Phase 1 and 2 have covered county-level mortality, income impact, and LTCF vulnerability. Phase 3 will build on this foundation with advanced analysis and interactivity.
 
 📁 [View Repository](https://github.com/Margaret-Johnson-ai/Data-Analytics-Portfolio/tree/main/COVID_Healthcare_Impact)
+
+### ✅ Key Findings Summary
+
+After analyzing the data from multiple public sources, here’s what the findings revealed:
+
+- **Counties with the highest COVID-19 death rates:**  
+  The data showed that counties such as **Bergen**, **Essex**, and **Hudson** consistently reported the highest average monthly deaths from COVID-19 between 2020 and 2023.
+
+- **Relationship between income and COVID-19 mortality:**  
+  There was a **weak inverse correlation** between median household income and average COVID-19 death rates. While lower-income counties often experienced more deaths, income alone was not a strong predictor of mortality.
+
+- **Impact of long-term care facility outbreaks:**  
+  A strong correlation (**0.81**) was found between LTCF-related deaths and overall average monthly COVID-19 deaths. This indicates that outcomes in long-term care facilities were a key driver of county-level mortality.
+
+- **Counties most vulnerable based on combined metrics:**  
+  Counties like **Essex** emerged as particularly vulnerable, exhibiting high LTCF death totals, lower income levels, and elevated monthly death averages. This suggests a convergence of socioeconomic and healthcare-related risk factors.
+
+These results highlight the value of combining datasets to better understand public health challenges. By merging and visualizing these insights, I was able to uncover trends that wouldn’t have been visible from a single source alone.
+
